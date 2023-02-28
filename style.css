@@ -33,188 +33,13 @@
     url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.svg#SF Pro Rounded") format("svg");
 }
 
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "SF Pro Rounded", serif;
-    font-feature-settings: "onum" 1;
-}
-
-h1 {
-    font-family: "SF Pro Rounded Semibold";
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    margin-top: -1.5em;
-    color: #ffffff;
-}
-h3{
-    font-family: "SF Pro Rounded";
-    color: rgba(255, 255, 255, 0.6);
-}
-
-u {
-    font-family: "SF Pro Rounded";
-    font-variant: small-caps;
-    font-weight: 100;
-    text-decoration: none;
-    letter-spacing: 0.04em;
-}
-
-ul {
-    padding-inline-start: 25px;
-    padding-inline-end: 5px;
-    margin-block-start: 0.75em;
-    margin-block-end: 0.75em;
-}
-
-.emphasis {
-    box-shadow: inset 0.4em 0px 0 white, inset 0 -0.7em 0;
-    font-weight: bold;
-}
-
-input {
-    text-align: center;
-    font-family: "SF Pro Rounded";
-    border-width: 1px;
-    border-radius: 0.3rem;
-    padding-left: 0.5rem;
-}
-
-blockquote p {
-    margin-block-start: 0.25em;
-    margin-block-end: 0.25em;
-}
-
-code {
-    background-color: #dfdfdf;
-    border-radius: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-.sized {
-    width: 800px;
-    max-width: 75vw;
-}
-
-#description {
-    padding-top: 0.5em;
-    text-align: justify;
-}
-
-#footer {
-    font-family: "SF Pro Rounded SemiBold";
-    text-align: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    font-size: small;
-    color: rgb(151, 146, 156);
-    width: 450px;
-}
-
-.sizedcontent {
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-}
-
-.sliders {
-    display: flex;
-    width: 13%;
-    justify-content: space-between;
-}
-
-.sliderLabels {
-    display: flex;
-    column-gap: 22px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2px;
-    margin-top: 5px;
-    display: flex;
-
-    vertical-align: middle;
-
-    justify-content: space-between;
-}
-
-td {
-    text-align: center;
-    vertical-align: middle;
-}
-
-#cssTable td {
-    text-align: center;
-    vertical-align: middle;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.clearNrand {
-    display: flex;
-    column-gap: 5px;
-    margin-bottom: 8px;
-
-    justify-content: space-between;
-}
-
-table {
-    width: 100%;
-}
-
-td {
-    text-align: center;
-}
-
-.button button {
-    font-family: "SF Pro Rounded", serif;
-    margin: 0;
-    background-color: #906ce4;
-    border: none;
-    border-radius: 0.3rem;
-
-    color: white;
-    padding: 6px 10px;
-    text-align: center;
-    font-size: 12px;
-    cursor: pointer;
-    transition: 300ms;
-    height: 1rem;
-}
-
-button:hover {
-    background: #fffd7d;
-    color: #432f64;
-}
-
-.videoDemo {
-    filter: brightness(400%);
-}
-
-.clearText {
-    font-family: "SF Pro Rounded";
-    font-size: smaller;
-    background-color: #a78fe4;
-    color: white;
-}
-
-* {
-    border: 0;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 :root {
+    --border: rgba(255, 255, 255, 0.3);
+
+    --g1: rgb(238, 222, 194);
+    --g2: rgb(154, 185, 149);
+    --g3: rgb(81, 105, 154);
+
     --hue: 223;
     --bg: hsl(var(--hue), 10%, 85%);
     --fg: hsl(var(--hue), 10%, 5%);
@@ -223,9 +48,6 @@ button:hover {
     font-size: calc(16px + (20 - 16) * (100vw - 320px) / (2560 - 320));
 }
 
-button {
-    font: 1em/1.5 Nunito, Helvetica, sans-serif;
-}
 
 body {
     background-color: #292930;
@@ -239,13 +61,54 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: rgb(35, 34, 50);
+    transition: background-color var(--trans-dur), color var(--trans-dur);
     color: var(--fg);
+
     height: 100vh;
     display: grid;
     place-items: center;
-    transition: background-color var(--trans-dur), color var(--trans-dur);
+    margin: 0;
+    padding: 0;
+
+
+    font-family: "SF Pro Rounded", serif;
+    font-feature-settings: "onum" 1;
+
+    /*display: flex;
+      flex-direction: column;
+      align-items: center;*/
 }
 
+
+h1 {
+    font-family: "SF Pro Rounded Semibold",sans-serif;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-top: -1.5em;
+    color: #ffffff;
+}
+
+h3 {
+    font-family: "SF Pro Rounded",sans-serif;;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input {
+    text-align: center;
+    font-family: "SF Pro Rounded",sans-serif;;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 .wrapper {
     display: flex;
@@ -254,48 +117,24 @@ body {
 
 }
 
+.column {
+    align-content: center;
+    text-align: center;
+    padding: 0;
+
+}
+
 input, select, textarea {
     color: #ffffff;
     text-align: left;
     padding-left: -100px;
     width: 10rem;
-
 }
 
-.column {
-    align-content: center;
-    text-align: center;
-    padding: 0px;
-
-}
-
-
-
-.keys {
-    border: 1px solid black;
-
-}
 
 a {
     text-underline-style: none;
     text-decoration: none;
-}
-
-:root {
-    --border: rgba(255, 255, 255, 0.3);
-
-    --g1: rgb(238, 222, 194);
-    --g2: rgb(154, 185, 149);
-    --g3: rgb(81, 105, 154);
-}
-
-body {
-    background-color: rgb(35, 34, 50);
-    height: 50vh;
-    margin: 0px;
-    padding: 0px;
-    place-items: center;
-    display: grid;
 }
 
 .card {
@@ -315,7 +154,7 @@ body {
 }
 
 .card:hover > .card-content {
-    background-position: -10% 0%;
+    background-position: -10% 0;
 }
 
 .card:hover > .card-icon {
@@ -336,11 +175,12 @@ body {
     width: 10rem;
     caret-color: white;
     color: #ffffff;
-    font-color: #ffffff;
 }
+
 input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
+
 form {
     width: 100%;
     height: 100%;
@@ -350,14 +190,17 @@ form {
     align-items: center;
 
 }
+
 input[type="text"] {
     width: 100%;
     height: 60%;
     font-size: 1rem;
 }
+
 .input {
     transition: 180ms box-shadow ease-in-out;
 }
+
 input[type="submit"] {
     color: #ffffff;
     background-color: #000000;
@@ -371,6 +214,7 @@ input[type="submit"] {
     transition: background-color 0.4s ease, color 0.4s ease;
 
 }
+
 input[type="submit"]:hover {
     background-color: #fff;
     color: #000;
@@ -381,6 +225,7 @@ input[type="file"] {
     height: 50%;
     font-size: 1rem;
 }
+
 .input {
     transition: 180ms box-shadow ease-in-out;
 }
@@ -391,8 +236,6 @@ input[type="file"] {
     box-shadow: 0 0 0 3px hsla(55, 100%, 66%, 0.8);
 }
 
-
-
 .submit-input {
     aspect-ratio: 1 / 1;
     border-radius: 0.4em;
@@ -400,27 +243,24 @@ input[type="file"] {
     margin: 0.7rem;
     caret-color: white;
     color: #ffffff;
-    font-color: #ffffff;
 }
 
-
 .card:before {
+    border-radius: 1rem;
     background: linear-gradient(
             130deg,
             transparent 0% 33%,
             var(--g1) 66%,
             var(--g2) 83.5%,
             var(--g3) 100%
-    );
-    border-radius: 1rem;
-    background-position: 0% 0%;
+    ) 0 0;
     background-size: 300% 300%;
     content: "";
     height: 100%;
-    left: 0px;
+    left: 0;
     pointer-events: none;
     position: absolute;
-    top: 0px;
+    top: 0;
     transition: background-position 350ms ease, transform 350ms ease;
     width: 100%;
     z-index: 1;
@@ -431,7 +271,7 @@ input[type="file"] {
             rgba(255, 255, 255, 0.2) 8%,
             transparent 8%
     );
-    background-position: 0% 0%;
+    background-position: 0 0;
     background-size: 4vmin 4vmin;
     height: 100%;
     width: 100%;
@@ -442,22 +282,13 @@ input[type="file"] {
     box-shadow: 0 0.75em 2em hsla(0, 10%, 5%, 0.4);
     border-radius: 1em;
     overflow: hidden;
-
 }
 
-.cardd {
-    display: grid;
-    place-items: center stretch;
-}
-
-
-
-.card-title,
-.card-subtitle {
+.card-title{
     color: rgba(255, 255, 255, 0.75);
-    font-family: "SF Pro Rounded";
+    font-family: "SF Pro Rounded",sans-serif;
     font-weight: 400;
-    margin: 0px;
+    margin: 0;
     text-align: left;
 
 }
@@ -466,32 +297,21 @@ input[type="file"] {
     font-size: 3vmin;
     transition: color 0.5s ease;
 }
-.card-content:hover .card-title{
-    color: black;
-}
-.card-content:hover .card-icon{
+
+.card-content:hover .card-title {
     color: black;
 }
 
-.card-subtitle {
-    font-size: 3vmin;
-}
-
-.card-subtitle-word {
-    display: inline-block;
-    margin: 0vmin 0.3vmin;
-    opacity: 0;
-    position: relative;
-    transform: translateY(40%);
-    transition: none;
+.card-content:hover .card-icon {
+    color: black;
 }
 
 .card-icon {
     display: inline-block;
-    bottom: 0px;
+    bottom: 0;
     color: rgba(255, 255, 255);
     font-size: 3.8rem;
-    left: 0px;
+    left: 0;
     margin-left: -2vmin;
     transition: color 0.5s ease;
 }
@@ -501,7 +321,7 @@ input[type="file"] {
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
     grid-template-rows: 0.5fr 1.5fr;
-    gap: 0px 0px;
+    gap: 0 0;
     grid-auto-flow: row;
     grid-template-areas:
     "icon text"
@@ -518,6 +338,4 @@ input[type="file"] {
 
 .field {
     grid-area: field;
-
-
 }
