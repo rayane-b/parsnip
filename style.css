@@ -1,0 +1,523 @@
+@import url(//db.onlinewebfonts.com/c/2fed949d780f40eb2e2f4374e4de8df5?family=SF+Pro+Display);
+@import url(//db.onlinewebfonts.com/c/49cf9e586b122fd8b8cf67c4df697fb9?family=SF+Pro+Rounded);
+@import url(//db.onlinewebfonts.com/c/4b57277e89dfdd30c9a6b69acaf78d3a?family=SF+Pro);
+
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("//db.onlinewebfonts.com/t/4b57277e89dfdd30c9a6b69acaf78d3a.eot");
+    src: url("//db.onlinewebfonts.com/t/4b57277e89dfdd30c9a6b69acaf78d3a.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4b57277e89dfdd30c9a6b69acaf78d3a.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/4b57277e89dfdd30c9a6b69acaf78d3a.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/4b57277e89dfdd30c9a6b69acaf78d3a.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/4b57277e89dfdd30c9a6b69acaf78d3a.svg#SF Pro") format("svg");
+}
+
+@font-face {
+    font-family: "SF Pro Display Thin";
+    src: url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.eot");
+    src: url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.svg#SF Pro Display") format("svg");
+}
+
+@font-face {
+    font-family: "SF Pro Rounded";
+    src: url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.eot");
+    src: url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/49cf9e586b122fd8b8cf67c4df697fb9.svg#SF Pro Rounded") format("svg");
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "SF Pro Rounded", serif;
+    font-feature-settings: "onum" 1;
+}
+
+h1 {
+    font-family: "SF Pro Rounded Semibold";
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-top: -1.5em;
+    color: #ffffff;
+}
+h3{
+    font-family: "SF Pro Rounded";
+    color: rgba(255, 255, 255, 0.6);
+}
+
+u {
+    font-family: "SF Pro Rounded";
+    font-variant: small-caps;
+    font-weight: 100;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+}
+
+ul {
+    padding-inline-start: 25px;
+    padding-inline-end: 5px;
+    margin-block-start: 0.75em;
+    margin-block-end: 0.75em;
+}
+
+.emphasis {
+    box-shadow: inset 0.4em 0px 0 white, inset 0 -0.7em 0;
+    font-weight: bold;
+}
+
+input {
+    text-align: center;
+    font-family: "SF Pro Rounded";
+    border-width: 1px;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+blockquote p {
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+}
+
+code {
+    background-color: #dfdfdf;
+    border-radius: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.sized {
+    width: 800px;
+    max-width: 75vw;
+}
+
+#description {
+    padding-top: 0.5em;
+    text-align: justify;
+}
+
+#footer {
+    font-family: "SF Pro Rounded SemiBold";
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    font-size: small;
+    color: rgb(151, 146, 156);
+    width: 450px;
+}
+
+.sizedcontent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
+
+.sliders {
+    display: flex;
+    width: 13%;
+    justify-content: space-between;
+}
+
+.sliderLabels {
+    display: flex;
+    column-gap: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    display: flex;
+
+    vertical-align: middle;
+
+    justify-content: space-between;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#cssTable td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearNrand {
+    display: flex;
+    column-gap: 5px;
+    margin-bottom: 8px;
+
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+.button button {
+    font-family: "SF Pro Rounded", serif;
+    margin: 0;
+    background-color: #906ce4;
+    border: none;
+    border-radius: 0.3rem;
+
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 300ms;
+    height: 1rem;
+}
+
+button:hover {
+    background: #fffd7d;
+    color: #432f64;
+}
+
+.videoDemo {
+    filter: brightness(400%);
+}
+
+.clearText {
+    font-family: "SF Pro Rounded";
+    font-size: smaller;
+    background-color: #a78fe4;
+    color: white;
+}
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --hue: 223;
+    --bg: hsl(var(--hue), 10%, 85%);
+    --fg: hsl(var(--hue), 10%, 5%);
+    --trans-dur: 0.3s;
+    --g4: rgb(50, 50, 91);
+    font-size: calc(16px + (20 - 16) * (100vw - 320px) / (2560 - 320));
+}
+
+button {
+    font: 1em/1.5 Nunito, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #292930;
+    background: linear-gradient(
+            145deg,
+            transparent 0% 20%,
+            #262f54 66%,
+            var(--g4) 83.5%,
+            #292930 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--fg);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transition: background-color var(--trans-dur), color var(--trans-dur);
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+input, select, textarea {
+    color: #ffffff;
+    text-align: left;
+    padding-left: -100px;
+    width: 10rem;
+
+}
+
+.column {
+    align-content: center;
+    text-align: center;
+    padding: 0px;
+
+}
+
+
+
+.keys {
+    border: 1px solid black;
+
+}
+
+a {
+    text-underline-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --border: rgba(255, 255, 255, 0.3);
+
+    --g1: rgb(238, 222, 194);
+    --g2: rgb(154, 185, 149);
+    --g3: rgb(81, 105, 154);
+}
+
+body {
+    background-color: rgb(35, 34, 50);
+    height: 50vh;
+    margin: 0px;
+    padding: 0px;
+    place-items: center;
+    display: grid;
+}
+
+.card {
+    aspect-ratio: 2 / 0.65;
+    border-radius: 1rem;
+    border: 0.5vmin solid var(--border);
+    cursor: pointer;
+    position: relative;
+    width: 65vmin;
+    place-items: center stretch;
+
+}
+
+.card:hover:before {
+    background-position: 100% 100%;
+    transform: scale(1.01, 1.01);
+}
+
+.card:hover > .card-content {
+    background-position: -10% 0%;
+}
+
+.card:hover > .card-icon {
+    color: white;
+}
+
+.card:hover > .card-content > .card-subtitle > .card-subtitle-word {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
+}
+
+.input-text {
+    border: 0.4vmin solid rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    height: 2rem;
+    width: 10rem;
+    caret-color: white;
+    color: #ffffff;
+    font-color: #ffffff;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+input[type="text"] {
+    width: 100%;
+    height: 60%;
+    font-size: 1rem;
+}
+.input {
+    transition: 180ms box-shadow ease-in-out;
+}
+input[type="submit"] {
+    color: #ffffff;
+    background-color: #000000;
+    border: 0.4vmin solid rgba(255, 255, 255, 0.6);
+    border-radius: 2em;
+    width: 11%;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    padding-left: 0.65em;
+    font-size: 0.8em;
+    transition: background-color 0.4s ease, color 0.4s ease;
+
+}
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+input[type="file"] {
+    width: 100%;
+    height: 50%;
+    font-size: 1rem;
+}
+.input {
+    transition: 180ms box-shadow ease-in-out;
+}
+
+.input:focus {
+    border-color: hsl(55, 100%, 66%);
+    outline: 3px solid transparent;
+    box-shadow: 0 0 0 3px hsla(55, 100%, 66%, 0.8);
+}
+
+
+
+.submit-input {
+    aspect-ratio: 1 / 1;
+    border-radius: 0.4em;
+    width: 3vmin;
+    margin: 0.7rem;
+    caret-color: white;
+    color: #ffffff;
+    font-color: #ffffff;
+}
+
+
+.card:before {
+    background: linear-gradient(
+            130deg,
+            transparent 0% 33%,
+            var(--g1) 66%,
+            var(--g2) 83.5%,
+            var(--g3) 100%
+    );
+    border-radius: 1rem;
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
+    height: 100%;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    transition: background-position 350ms ease, transform 350ms ease;
+    width: 100%;
+    z-index: 1;
+}
+
+.card-content {
+    background-image: radial-gradient(
+            rgba(255, 255, 255, 0.2) 8%,
+            transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 4vmin 4vmin;
+    height: 100%;
+    width: 100%;
+    padding: 5vmin;
+    position: relative;
+    transition: background-position 350ms ease;
+    z-index: 2;
+    box-shadow: 0 0.75em 2em hsla(0, 10%, 5%, 0.4);
+    border-radius: 1em;
+    overflow: hidden;
+
+}
+
+.cardd {
+    display: grid;
+    place-items: center stretch;
+}
+
+
+
+.card-title,
+.card-subtitle {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "SF Pro Rounded";
+    font-weight: 400;
+    margin: 0px;
+    text-align: left;
+
+}
+
+.card-title {
+    font-size: 3vmin;
+    transition: color 0.5s ease;
+}
+.card-content:hover .card-title{
+    color: black;
+}
+.card-content:hover .card-icon{
+    color: black;
+}
+
+.card-subtitle {
+    font-size: 3vmin;
+}
+
+.card-subtitle-word {
+    display: inline-block;
+    margin: 0vmin 0.3vmin;
+    opacity: 0;
+    position: relative;
+    transform: translateY(40%);
+    transition: none;
+}
+
+.card-icon {
+    display: inline-block;
+    bottom: 0px;
+    color: rgba(255, 255, 255);
+    font-size: 3.8rem;
+    left: 0px;
+    margin-left: -2vmin;
+    transition: color 0.5s ease;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "icon text"
+    "icon field";
+}
+
+.icon {
+    grid-area: icon;
+}
+
+.text {
+    grid-area: text;
+}
+
+.field {
+    grid-area: field;
+
+
+}
